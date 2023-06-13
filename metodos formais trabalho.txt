@@ -1,0 +1,3 @@
+aa, aaa, aba, aaaa, aaba, abaa, abba, aaaaa, abaaa, aabaa, aaaba, abbaa, ababa, abbba, aabba
+
+qualquer palavra que comece e termine com "a" e tenha qualquer combinação de "a"s e "b"s no meio.

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+    --black: #080708;
+    --cerise: #E63462;
+    --crayola: #3772FF;
+    --bittersweet: #FE5F55;
+    --sunglow: #FDCA40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: url("./background.gif"); */
+    background-position: center;
+}
+
+main {
+    background-color: var(--sunglow);
+    margin: auto;
+    height: 100vh;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(8, 7, 8, 0.342) 0px 0px 20px 15px;
+}
+
+.container {
+    background-color: var(--crayola);
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: rgba(8, 7, 8, 0.507) 3px 3px 5px 2px;
+}
+
+div.form-group {
+    margin: 1em 15px;
+}
+
+div.form-group > button {
+    display: block;
+    margin: 0.5em 0;
+}
+
+button {
+    background-color: var(--bittersweet);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    box-shadow: rgba(8, 7, 8, 0.377) 2px 2px 4px 1px;
+}
+
+button:hover {
+    background-color: var(--cerise);
+}
+
+label, button, span, input {
+    font-family: 'VT323', monospace;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 2px 2px #080708;
+}
+
+input.digitar {
+    color: black;
+    text-shadow: none;
+    box-shadow: rgba(8, 7, 8, 0.377) 2px 3px 3px 1px;
+    border: none;
+}
+
+.slider {
+    -webkit-appearance: none;
+    height: 7px;
+    border-radius: 2px;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+
+    margin: 0 0.8em;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--bittersweet);
+    cursor: pointer;
+    box-shadow: rgba(8, 7, 8, 0.507) 0px 0px 3px 1px;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    background: var(--cerise);
+}

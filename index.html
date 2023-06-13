@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="form-group">
+                <label for="palavra">Palavra para teste:</label>
+                <input id="palavra" class="digitar" type="text">
+                <button onclick="verificar()">Verificar</button>
+            </div>
+            
+            <div class="form-group">
+                <label for="delay">Delay (segundos):</label>
+                <input type="range" class="slider" id="delay" min="0" max="3" step="0.5" onpointermove="updateDelay()" value="0">
+                <span id="pDelay"></span>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script src="script.js"></script>
+</html>
